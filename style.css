@@ -1,0 +1,71 @@
+.content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.heroes{
+    display: grid;
+    grid-template-columns: repeat(3,130px);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.heroes div{
+    
+    border: 2px rgb(180, 168, 168) solid ;
+   height: 190px;
+   border-radius: 10px;
+   text-align: center;
+}
+
+.villains{
+    display: grid;
+    grid-template-columns: repeat(3,130px);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+} 
+
+.villains div{
+    
+    border: 2px rgb(180, 168, 168) solid ;
+   height: 190px;
+   border-radius: 10px;
+   text-align: center;
+}
+
+.score_board{
+    border: 2px rgb(255, 255, 255) solid ;
+    height: 200px;
+    width: 350px;
+box-shadow: 1px 1px 1px 1px;
+text-align: center;
+font-size: 30px;
+}
+
+.content{
+    margin-top: 20px;
+
+}
+
+@media all and (max-width:900px){
+
+    .content{
+        display:block;
+    }
+
+    .villains{
+        margin-top: 50px;
+        margin-left: 200px;
+    }
+
+    .heroes{
+        margin-bottom: 50px;
+        margin-left: 200px;
+    }
+
+    
+    .score_board{
+        margin-left: 225px;
+    }
+}
